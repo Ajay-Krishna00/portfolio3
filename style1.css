@@ -1,0 +1,237 @@
+/* begining of the design */
+
+body {
+    border: rgb(108, 106, 106) 1.2px solid;
+    font-weight: 100;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin: 0;
+    background-image:url('pexels-juan-nino-9556479.jpg') ;
+    background-size: cover;
+    /*
+    background-image: linear-gradient(to left bottom, rgba(8, 6, 40, 0.847), rgb(116, 8, 138), rgb(3, 7, 77), rgb(184, 6, 124));
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgb(78, 2, 45) 45%, rgb(152, 17, 145) 100%);
+    */
+}
+@media screen and(min-width:60%){
+    #whole{
+        width: 45%;
+    }
+}
+#space{
+    display: grid;
+    grid-template-rows: repeat(30, 50px) ;
+    grid-template-columns: repeat(10, 80px);
+    grid-gap: 1rem 1rem;
+}
+h1{
+    display: grid;
+    font-size: 3rem;
+    background-image: linear-gradient(to right bottom, rgb(8, 147, 11), rgb(245, 245, 40));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#welcome{
+    grid-area: 1/1/1/5;
+}
+#I{
+    grid-area: 4/5/5/11;
+}
+#intro {
+    color: rgb(8, 211, 211);
+    font-size: 1.3rem;
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 450;
+    grid-area: 8/2/9/17;
+}
+#one{
+    display: grid;
+    width: 1495px;
+    height: 520px;
+}
+#back{
+    grid-area: 1/1/5/10;
+}
+#two{
+    display: grid;
+    width: 130px ;
+    height: auto ;
+    
+}   
+#img{
+    grid-area: 4/10/7/12;
+} 
+#stiker{
+    display: grid;
+    width:280px;
+    grid-area: 1/13;
+}
+#stiker1{
+    display: grid;
+    width: 380px;
+    grid-area: 19/13;
+}
+#sticker2{
+    display: grid;
+    width: 60px;
+    grid-area: 15/3;
+}
+#sticker3{
+    display: grid;
+    width: 60px;
+    grid-area: 15/4;
+}
+#sticker4{
+    display: grid;
+    width: 60px;
+    grid-area: 15/5;
+}
+#sticker5{
+    display: grid;
+    width: 70px;
+    grid-area: 15/6;
+}
+.mail{
+    display: grid;
+    width: 60px;
+    grid-area: 18/2;
+}
+.linkdin{
+    display: grid;
+    width: 60px;
+    grid-area: 18/4;
+}
+.git{
+    display: grid;
+    width: 60px;
+    grid-area: 18/6;
+}
+h2{
+    background-image: linear-gradient(to right, rgb(211, 33, 36), rgb(251, 251, 6));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    
+}
+#passion {
+    display: grid;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    padding-left:5rem;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgb(65, 3, 94) 100%);
+    grid-area: 10/2/14/10;
+    box-shadow: white 6px 6px 50px 1px;
+}
+#tech {
+    display: grid;
+    color: white;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    padding-left:4rem;
+    padding-top: 2rem;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgb(65, 3, 94) 100%);
+    grid-area: 14/9/18/14;
+    box-shadow: white 6px 6px 50px 1px;
+
+}
+#beyond{
+    display: grid;
+    color: white;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border: 3px solid transparent;
+    justify-content: space-between;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgb(71, 4, 100) 100%);
+    grid-area: 18/2/24/10;
+    box-shadow: white 6px 6px 50px 1px;    
+}
+#outro {
+    display: grid;
+    color: white;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    grid-area: 25/4/29/14;
+}/*end of design*/
+
+/*start of animation*/
+#two:hover{
+    transform: translateY(20px);
+    transition: 0.39s;
+    border-radius: 20%;
+    box-shadow: silver 5px 5px 55px 2px;
+}
+
+#welcome:hover{
+    font-size: 24px;
+    color: blue;
+    animation: textAnimation 0.6s ;
+}
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#I:hover{
+    font-size: 25px;
+    color: blue;
+    animation: textAnimation1 0.9s infinite;
+}
+@keyframes textAnimation1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.11);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    60% {
+        transform: translateX(30px) scale(1.05); 
+    }
+    100% {
+        transform: translateY(0px) scale(1); 
+    }
+}
+#passion:hover {
+    animation: scrollAnimation 0.5s linear ; 
+    overflow: hidden;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, rgb(23, 30, 160) 0%, rgb(230, 241, 79) 25%, rgb(246, 51, 51) 100%);
+}
+#beyond:hover {
+    animation: scrollAnimation 0.5s linear ; 
+    overflow: hidden;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, rgb(125, 43, 146) 0%, rgb(230, 241, 79) 25%, rgb(246, 51, 51) 100%);
+}
+#tech:hover {
+    animation: scrollAnimation 0.5s linear ; 
+    overflow: hidden;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, rgb(161, 54, 138) 0%, rgb(230, 241, 79) 25%, rgb(246, 51, 51) 100%);
+}
+
+
+
+
+
+/*end of animation*/
